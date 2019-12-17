@@ -2,6 +2,7 @@
     position: absolute;
     display: flex;
     padding: 10px;
+    color:white;
   }
 
   .inner {
@@ -12,11 +13,11 @@
   }
 
   .male {
-    background: #a4ecff;
+    background:black;
   }
 
   .female {
-    background: #fdaed8;
+    background:Red;
   }
 
   .isRoot {
