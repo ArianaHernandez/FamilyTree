@@ -16,7 +16,8 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      info: null
+      info: null,
+      name:null
     }
   }
 
@@ -35,6 +36,7 @@ class App extends React.Component {
           isRoot={node.id === rootId}
           style={style}
           handleClick={() => {
+              this.setState({name:node.id});
               this.setState({info:node.bio});
           }}
           type={node.type} />
