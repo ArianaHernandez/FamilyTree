@@ -34,7 +34,9 @@ class App extends React.Component {
           node={node}
           isRoot={node.id === rootId}
           style={style}
-          handleClick={() => {/* show the node.bio in the info box */}}
+          handleClick={() => {
+              this.setState({info:node.bio});
+          }}
           type={node.type} />
     );
   }

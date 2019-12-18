@@ -1,6 +1,6 @@
 // This is the class and constructor used to create an object with a person's information.
 class PersonInfo {
-  constructor(id, gender, parents, children, siblings, spouses, bio) {
+  constructor(id, gender, parents, children, siblings, spouses, bio,imageurl) {
     this.id = id;
     this.gender = gender;
 
@@ -30,16 +30,16 @@ class PersonInfo {
 
 let data = [
   // This is the object that represents you
-  new PersonInfo("Izzy", "female", ["Alexander", "Cloe"], [], ["Isodora", "Alexander II"], [], "This is me!"),
+  new PersonInfo("Izzy", "female", ["Alexander", "Cloe"], [], ["Isodora", "Alexander II"], [], "Age:17, Species:Vampire, Personality:Snob/Bookworm","Izzy.png"),
 
   // These two objects are your parents
-  new PersonInfo("Alexander", "male", [], ["Izzy", "Isodora","Alexander II"], [], ["Cloe"], "I'm your dad."),
+  new PersonInfo("Alexander", "male", [], ["Izzy", "Isodora","Alexander II"], [], ["Cloe"], "Age:333, Species:Vampire, Personality:Childish/Creative/Nerdy","Alexander.png"),
 
-  new PersonInfo("Cloe", "female", [], ["Izzy", "Isodora","Alexander II"], [], ["Alexander"], "I'm your mom."),
+  new PersonInfo("Cloe", "female", [], ["Izzy", "Isodora","Alexander II"], [], ["Alexander"], "Age:326, Species:Mermaid, Personality:Nerdy/Good/Materialistic","Cleo.png"),
 
   // These objects are your siblings
-  new PersonInfo("Isodora", "female", ["Alexander", "Cloe"], [], ["Izzy", "Alexander II"], [], "I'm your sister."),
-    new PersonInfo("Alexander II", "male", ["Alexander", "Cloe"], [], ["Izzy", "Isodora"], [], "I'm your brother.")
+  new PersonInfo("Isodora", "female", ["Alexander", "Cloe"], [], ["Izzy", "Alexander II"], [], "Age:4, Species:Alien, Personality:Charmer","Isodora.png"),
+    new PersonInfo("Alexander II", "male", ["Alexander", "Cloe"], [], ["Izzy", "Isodora"], [], "Age:11, Species:Mermaid, Personality:Bookworm","AlexanderII.png")
 ];
 
 export default data;
