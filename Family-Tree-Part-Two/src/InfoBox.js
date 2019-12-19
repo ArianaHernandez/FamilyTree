@@ -9,7 +9,9 @@ class InfoBox extends React.Component {
         <NamesList namesList={this.props.namesList} />
         <h1>{this.props.name}</h1>
         <h4>{this.props.info}</h4>
-        <img src="Izzy.png" alt="ahhh" height="50px"></img>
+       {/* <img src="https://drive.google.com/uc?export=download&id=1JUd9W6BKj6LzzEdyDbOu6Z-RI0BvXoq_" height="200px" />
+      */}
+      <img src={this.props.picture}/>
       </div>
     );
   }

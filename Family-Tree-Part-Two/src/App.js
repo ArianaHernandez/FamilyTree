@@ -17,7 +17,8 @@ class App extends React.Component {
 
     this.state = {
       info: null,
-      name:null
+      name: null,
+      picture:null
     }
   }
 
@@ -38,6 +39,7 @@ class App extends React.Component {
           handleClick={() => {
               this.setState({name:node.id});
               this.setState({info:node.bio});
+              this.setState({picture:node.image})
           }}
           type={node.type} />
     );
@@ -55,7 +57,9 @@ class App extends React.Component {
             renderNode={(node) => this.renderPerson(node)} />
         <InfoBox
             namesList={familyNamesList}
-            info={this.state.info} />
+            info={this.state.info}
+            name={this.state.name}
+            picture={this.state.picture} />
       </div>
     );
   }
